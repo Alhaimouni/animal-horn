@@ -4,11 +4,13 @@ import Card from 'react-bootstrap/Card';
 import "./HornedBeast.css";
 
 
+
 class HornedBeast extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { counter: 0 }
+        this.state = { counter: 0,
+                        show : true }
     }
 
     addCount = () => {
@@ -17,19 +19,23 @@ class HornedBeast extends React.Component {
 
     }
 
+    
+    
+
+
 
     render() {
 
         return (
 
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={this.props.imgUrl} />
+                <Card.Img onClick={this.addCount}  variant="top" src={this.props.imgUrl} />
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
                     <Card.Text>
                     {this.props.description}
                     </Card.Text>
-                    <Button className="b" onClick={this.addCount} variant="primary"> ❤️ {this.state.counter}</Button>
+                    <Button className="b"  variant="primary"> ❤️ {this.state.counter}</Button>
                 </Card.Body>
             </Card>
 
