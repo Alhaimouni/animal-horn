@@ -31,7 +31,7 @@ class HornedBeast extends React.Component {
                     <Card.Text>
                     {this.props.description}
                     </Card.Text>
-                    <Button className="b"  variant="primary" > ❤️ {this.state.counter} </Button>
+                    <Button className="b"  variant="primary" > ❤️ Love {this.state.counter} </Button>
                 </Card.Body>
             </Card>
 
