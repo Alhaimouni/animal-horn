@@ -16,10 +16,10 @@ class SelectedBeast extends React.Component {
             <>
                 <Modal show={this.props.show} >
                     <Modal.Header >
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>{this.props.info.title}</Modal.Title>
                     </Modal.Header>
                     <img src={this.props.info.image_url} alt={this.props.info.title}/>
-                    <Modal.Body>{this.props.info.title}</Modal.Body>
+                    <Modal.Body>{this.props.info.description}</Modal.Body>
                     <Button onClick={this.props.handleClose} >Close meee fast</Button>
                 </Modal>
             </>

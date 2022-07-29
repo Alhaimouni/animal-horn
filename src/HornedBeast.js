@@ -19,7 +19,6 @@ class HornedBeast extends React.Component {
         this.props.click(this.props.data);
         
     }
-
     render() {
 
         return (
@@ -38,9 +37,6 @@ class HornedBeast extends React.Component {
 
                 </Card.Body>
             </Card>
-
-
-
         )
     }
 }
