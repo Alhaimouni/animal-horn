@@ -37,5 +37,9 @@ class App extends React.Component {
         <SelectedBeast show={this.state.showModal} handleClose={this.hideBeast} info={this.state.selectedBeast}/>
         <Footer/>
       </div>
-    );}
+    );
+  }
+
+}
+
 export default App;
