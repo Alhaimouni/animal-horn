@@ -6,6 +6,7 @@ class Footer extends React.Component {
             <>
             <p> All rigths reserved @Mohammad Al-haimouni</p>
             <p>allbeasts all saved</p>
+            <p>modal works</p>
             </>
         )
     }
