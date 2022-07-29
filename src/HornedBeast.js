@@ -15,27 +15,27 @@ class HornedBeast extends React.Component {
 
     addCount = () => {
 
-        this.setState({ counter: this.state.counter + 1 })
-
+        this.setState({ counter: this.state.counter + 1 });
+        this.props.click(this.props.data);
+        
     }
-
-    
-    
-
-
 
     render() {
 
         return (
 
             <Card style={{ width: '18rem' }}>
-                <Card.Img onClick={this.addCount}  variant="top" src={this.props.imgUrl} />
+
+                <Card.Img variant="top" src={this.props.imgUrl} onClick={this.addCount}/>
+
                 <Card.Body>
                     <Card.Title>{this.props.title}</Card.Title>
                     <Card.Text>
                     {this.props.description}
                     </Card.Text>
-                    <Button className="b"  variant="primary"> ❤️ {this.state.counter}</Button>
+
+                    <Button className="b"  variant="primary" > ❤️ Love {this.state.counter} </Button>
+
                 </Card.Body>
             </Card>
 
