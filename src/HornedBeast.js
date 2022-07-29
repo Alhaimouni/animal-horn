@@ -18,8 +18,6 @@ class HornedBeast extends React.Component {
         
     }
     
-    
-
     render() {
 
         return (
@@ -34,9 +32,6 @@ class HornedBeast extends React.Component {
                     <Button className="b"  variant="primary" > ❤️ Love {this.state.counter} </Button>
                 </Card.Body>
             </Card>
-
-
-
         )
     }
 }
