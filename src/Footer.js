@@ -5,6 +5,7 @@ class Footer extends React.Component {
         return (
             <>
             <p> All rigths reserved @Mohammad Al-haimouni</p>
+            <p>allbeasts all saved</p>
             </>
         )
     }
